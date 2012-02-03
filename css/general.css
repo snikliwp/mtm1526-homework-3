@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #ccc;
+}
+
+body {
+	font: normal 100%/1.5 sans-serif;
+	background-color: #fff;
+	color: #555;
+	width: 600px;
+	margin: auto;
+	height: 950 px;
+	
+}
+
+.colour, 
+.property {
+	float: left;
+	margin: 0;
+	padding: 1em;
+	
+}
+
+
+label {
+	display: block;
+	padding: 0 0 0.1em 0;
+	color: #000;
+	text-decoration: bold;
+}
+
+
+
+
+form {
+	margin: 1em auto;
+	padding: 2em;
+	width: 34em;
+	background-color: #fff;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+	float: left;
+	
+}
+
+.hide {
+	float: right;
+	margin: 0;
+	padding-top: 1em;
+	padding-right: 1em;
+	
+}
+
+.ball {
+	clear: both;
+	background-color: #f00;
+	width: 300px;
+	height: 300px;
+	-moz-border-radius: 150px;
+	border: 5px solid #000;
+/*	border-color: #000;
+	border-width: 5px;
+*/	margin: auto;
+	
+}
+
+
+
+.ball p {
+	color: #000000;
+	margin: auto;
+	text-align: center;
+	padding-top: 90px;
+	font-size: 500%;
+	color: #0F0;
+	
+	
+}
+
+.ball {
+	border-color: #0F0;
+	
+}
+
+
+.clearfix: before,
+.clearfix: after {
+	content: "";
+	display: table;
+}
+.clearfix: after {
+	clear: both;
+}
+.clearfix {
+	zoom 1: /* will generate a validation error */
+}
