@@ -26,6 +26,12 @@ body {
 	
 }
 
+.hide {
+	float: right;
+	padding-top: 1em;
+	padding-right: 2em;
+	
+}
 
 label {
 	display: block;
