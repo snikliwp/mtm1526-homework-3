@@ -6,48 +6,22 @@
 
 $(document).ready(function(e) {
 	// All jQuery code goes inside the document ready event
-	
-	/*
-	Everything we do in jQuery gos thriugh the $() function:
-	1. We select an element using a css selector
-	2. we do something to that element
-	We can write any css selector that you think of
-	$("#thing") -> Get by ID
-	$(".thing") -> Get by class
-	$("div p") -> Get by Tags:  all the <p> elements inside <div> elements
-	$("div p:first-child") -> The first <p> element inside <div> elements
-	*/
-	$("a").on("click", function(ev) {
-	/*
-	".prevent Default()" will stop HTML elements from doing what they normally do
-	- for links it will stop them from going to another page
-	- for forms it will stop them from submitting
-	*/
+	$("#apply").on("click", function(ev) {
 		ev.preventDefault();
-//		console.log("Hello");
-		/*
-		"$(this)" gives us a reference to the element this event listener is attached to
-		".attr()" lets us get and set element attributes 
-		*/
-//		console.log($(this).attr("href"));
-		/*
-		with ".css()" we can get and set CSS properties
-		The CSS property name (1st Argument) is identical to how you would write it in CSS
-		*/
-		$(this).css("background-color", "#f33");
+		if ($("#property").val() == "color") {
+			$(".ball p").css($("#property").val(), $("#colour").val());
+		} else {
+		$(".ball").css($("#property").val(), $("#colour").val());
+		} <!--end else-->
 		
 	});
-	$("form").on("submit", function (ev) {
+	
+	
+	
+	$("#hide").on("click", function (ev) {
 		ev.preventDefault();
-		
-		var newLi = $(document.createElement("li"));
-		
-		if ($("#item").val() != "") {
-			newLi.html($("#item").val());
-			$("ol").append(newLi);
-			$("li").attr("id", $("#item").val());
-			$("#item").val("");
-		}
+		$(".ball").toggleClass("gone");
+		$("p").toggleClass("gone");
 		
 	});
 	
@@ -69,7 +43,6 @@ $(document).ready(function(e) {
 //		console.log($(this).attr("id"));
 //		newLi.html($("#item").val());
 		$("ol").append($(this));
-		$(this).removeClass("highlight");
 //		$("#item").val("");
 
 //		$(this).toggleClass("done");

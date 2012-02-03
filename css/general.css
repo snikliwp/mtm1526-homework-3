@@ -14,7 +14,7 @@ body {
 	color: #555;
 	width: 600px;
 	margin: auto;
-	height: 950 px;
+/*	min-height: 950 px; */
 	
 }
 
@@ -34,9 +34,6 @@ label {
 	text-decoration: bold;
 }
 
-
-
-
 form {
 	margin: 1em auto;
 	padding: 2em;
@@ -47,44 +44,54 @@ form {
 	
 }
 
-.hide {
-	float: right;
-	margin: 0;
-	padding-top: 1em;
-	padding-right: 1em;
-	
-}
 
 .ball {
 	clear: both;
-	background-color: #f00;
+	background-color: #fff;
 	width: 300px;
 	height: 300px;
 	-moz-border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-o-border-radius: 150px;
+	-ms-border-radius: 150px;
+	border-radius: 150px;
 	border: 5px solid #000;
-/*	border-color: #000;
+	color: #000;
 	border-width: 5px;
-*/	margin: auto;
+	margin: auto;
 	
+	-moz-transition: all 200ms ease-in-out;
+	-webkit-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
 }
 
 
-
 .ball p {
-	color: #000000;
+/*	color: #000000; */
 	margin: auto;
 	text-align: center;
 	padding-top: 90px;
 	font-size: 500%;
-	color: #0F0;
+	color: #000;
 	
 	
 }
 
-.ball {
-	border-color: #0F0;
-	
+
+.gone {
+	width: 0px;
+	height: 0px;
+	border: none;
+	font-size: 0%;
+	-moz-transition: all 200ms ease-in-out;
+	-webkit-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
 }
+
 
 
 .clearfix: before,
